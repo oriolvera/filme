@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Nutricional</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Messi</h1>
+    <form id="calcform">
+      <label for="age" id="age">Idade:</label>
+      <input type="number">
+      
+       <label for="weight" id="weight">Peso(Kg):</label>
+      <input type="number">
+      
+       <label for="height" id="height">Altura(cm):</label>
+      <input type="number">
+      
+      <label for="goal" id="goal">Objetivo:</label>
+      <select name="goal" id="goal">
+        <option value="empty"></option>
+        <option value="lose">Perder peso</option>
+        <option value="maintain">Manter peso</option>
+        <option value="gain">Ganhar peso</option>
+        </select>
+      <button type="button" onclick="calculateCalories">Calcular</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+</body>
+</html>
